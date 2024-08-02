@@ -8,16 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors({ origin: '*' }));
 
 app.get('/', async (req, res) => {
-  try {
-    db.query("DELETE FROM customers WHERE firstname = 'boY'", (err, results) => {
-      if (err) {
-        return res.status(500).json({ error: 'Database query failed' });
-      }
-      res.json({ list_customers: results });
-    });
-  } catch (err) {
-    res.status(500).json({ error: 'Internal server error' });
-  }
+ res.send("Hello Nodejs api back-end mywebsite")
 });
 
 
