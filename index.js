@@ -10,7 +10,7 @@ app.use(cors({origin:"*"}))
 
 
 app.get("/",(req,res)=>{
-    res.send("Hello My Website")
+    res.send("Hello My Websites4")
 })
 
 require("./routes/customerRoutes")(app)
