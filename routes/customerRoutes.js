@@ -17,7 +17,7 @@ const customerRoute = (app) => {
   app.get("/getList", customerController.getList);
   app.delete("/remove/:id", customerController.remove);
   app.put("/update", upload.single("myfile"), customerController.update);
-  app.post("/create", customerController.create);
+  app.post("/create", upload.single("myfile"), customerController.create);
   app.post("/login", customerController.login);
 };
 
