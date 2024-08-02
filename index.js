@@ -28,8 +28,8 @@ app.get("/",(req,res)=>{
 
 require("./routes/customerRoutes")(app)
 
-// const port = 8080 //sdkjskdljalsjdlfasj
-// app.listen(port,()=>{
-//     console.log("http://localhost:"+port)
-// })
+const port = 8080 
+app.listen(port,()=>{
+    console.log("http://localhost:"+port)
+})
 module.exports = app;
